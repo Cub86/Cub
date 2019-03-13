@@ -1,68 +1,42 @@
 package com.company.Lesson4;
 
-import java.util.ArrayList;
+import java.util.Scanner;
 
 public class SredneeZnachenie {
 
-    private ArrayList<Double> doubleValues;
+    public static void main(String[] srgs) {
 
-    public void Average() {
-        doubleValues = new ArrayList<>();
-    }
+        Scanner in = new Scanner(System.in);
+        double a, b, c;
+        System.out.println("Введите Первое число ");
+        a = in.nextDouble();
+        System.out.println("Введите второе число ");
+        b = in.nextDouble();
+        System.out.println("Введите третье число");
+        c = in.nextDouble();
 
-    public void readArguments(String[] args) {
-        for (String arg : args) {
-            readNextArgument(arg);
-        }
-        printEnteredDoubleNumbers();
-    }
-
-    private void readNextArgument(String s) {
+        String str1 = "13.7";
+        String str2 = "5.1";
+        String str3 = "120.22";
         try {
-            doubleValues.add(Double.parseDouble(s));
+            a = Double.parseDouble(str1);
+            System.out.println(a);
         } catch (NumberFormatException e) {
-            printParseToDoubleError(s);
+            System.err.println("Неверный формат строки!");
         }
-    }
-
-    private void printParseToDoubleError(String s) {
-        System.out.println("Argument: " + s + " isn't a double value. We won't consider it.");
-    }
-
-    private double getAverage() {
-        if (doubleValues.size() == 0) {
-            return Double.NaN;
-        } else {
-            return getSumOfAllDoubleArguments() / getQuantityOfAllDoubleArguments();
+        try {
+            a = Double.parseDouble(str2);
+            System.out.println(a);
+        } catch (NumberFormatException e) {
+            System.err.println("Неверный формат строки!");
         }
-    }
-
-    private double getSumOfAllDoubleArguments() {
-        double sum = 0.0;
-        for (Double arg : doubleValues) {
-            sum += arg;
+        try {
+            a = Double.parseDouble(str3);
+            System.out.println(a);
+        } catch (NumberFormatException e) {
+            System.err.println("Неверный формат строки!");
         }
-        return sum;
-    }
-
-    private int getQuantityOfAllDoubleArguments() {
-        return doubleValues.size();
-    }
-
-    private void printEnteredDoubleNumbers() {
-        System.out.print("\nEntered double numbers are ");
-        for (Double doubleValue : doubleValues) {
-            System.out.print(doubleValue + " ");
-        }
-        System.out.println();
-    }
-
-    public void printAverageValue() {
-        double result = getAverage();
-        if (!Double.isNaN(result)) {
-            System.out.println("The average amount of entered double numbers is " + result);
-        } else {
-            System.out.println("Sorry! You have entered only incorrect values.");
-        }
+        double srednee = (a + b + c) / 3;
+        System.out.println("Среднее арифметическое= " + srednee);
     }
 }
