@@ -22,19 +22,19 @@ public class SredneeZnachenie {
             a = Double.parseDouble(str1);
             System.out.println(a);
         } catch (NumberFormatException e) {
-            System.err.println("Неверный формат строки!");
+            System.err.println("Неверный формат");
         }
         try {
             a = Double.parseDouble(str2);
             System.out.println(a);
         } catch (NumberFormatException e) {
-            System.err.println("Неверный формат строки!");
+            System.err.println("Неверный формат");
         }
         try {
             a = Double.parseDouble(str3);
             System.out.println(a);
         } catch (NumberFormatException e) {
-            System.err.println("Неверный формат строки!");
+            System.err.println("Неверный формат");
         }
         double srednee = (a + b + c) / 3;
         System.out.println("Среднее арифметическое= " + srednee);
