@@ -1,4 +1,4 @@
-package com.company.Lesson3;
+package com.company.lesson3;
 
 public class Prividenie {
     public static void toByte() {

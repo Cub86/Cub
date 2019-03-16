@@ -1,4 +1,4 @@
-package com.company.Lesson4;
+package com.company.lesson4;
 
 public class GirlandaB {
 
@@ -8,7 +8,7 @@ public class GirlandaB {
 
         public  static void First(int a) throws InterruptedException {
             for (int i = 0; i < 40; i++) {
-               ;
+                Miganie(a) ;
                 a = ~a;
                 Thread.sleep(200);
             }
