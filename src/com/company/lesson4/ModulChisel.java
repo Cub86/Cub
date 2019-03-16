@@ -15,9 +15,9 @@ public class ModulChisel {
         a = sc.nextInt();
         System.out.println("Введите третье число: ");
         b = sc.nextInt();
-        if ((Math.abs(i)) < (Math.abs(a)) && (Math.abs(i)) < (Math.abs(b))) {
+        if (Math.abs(i) < Math.abs(a) && Math.abs(i) < Math.abs(b)) {
             System.out.println(Math.abs(i));
-        } else if ((Math.abs(a)) < (Math.abs(i)) && (Math.abs(a)) < (Math.abs(b))) {
+        } else if (Math.abs(a) < Math.abs(i) && Math.abs(a) < Math.abs(b)) {
             System.out.println(Math.abs(a));
         } else {
             System.out.println(Math.abs(b));
