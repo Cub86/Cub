@@ -6,6 +6,8 @@ public class Book {
 
     public Book(String name, String autor) {
         System.out.println("Петров В. В. взял такие книги:" + " " + "Название книги - " + name + " " + "Автор - " + autor);
+        this.name = name;
+        this.autor = autor;
     }
 
     public String getName() {

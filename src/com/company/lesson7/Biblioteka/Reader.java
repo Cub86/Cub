@@ -15,7 +15,6 @@ public class Reader {
         this.fakultet = fakultet;
         this.dataRogdenia = dataRogdenia;
         this.callNumber = callNumber;
-
     }
 
     public int getQuantyBook() {
@@ -72,14 +71,13 @@ public class Reader {
         else if (quantyBook != 3)
             System.out.println("Петров обязан взять 3 книги" + quantyBook);
 
-                   }
-
-    /*public void takeBook(String a, String b) {
-        System.out.println("Петров В. В. взял книги: Приключения, Словарь, Энциклопедия" + a);
-        for (b:
-             a)
-            System.out.println(b + "");
     }
+
+    public void takeBook(String... a) {
+        System.out.println("Петров В. В. взял книги: Приключения, Словарь, Энциклопедия" + a);
+        for (String b : a)
+            System.out.println(b + "");
+    }/*
 
     public void takeBook(String a, String b) {
         System.out.println("Петров В. В. взял книги: Приключения, Словарь, Энциклопедия" + a);
