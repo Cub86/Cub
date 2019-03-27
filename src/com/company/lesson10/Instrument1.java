@@ -5,7 +5,7 @@ public class Instrument1 {
         Instrument[] instruments = new Instrument[3];
         instruments[0] = new Gitar();
         instruments[1] = new Cais();
-        instruments[2] = new Truba();
+        instruments[2] = new Truba(34);
 
         for (Instrument instrument : instruments) {
             instrument.play();

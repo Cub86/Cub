@@ -11,7 +11,7 @@ public enum Sizes {
     S(40),
     M(42),
     L(44);
-
+    private int EuroSize;
     Sizes(int euroSize) {
         EuroSize = euroSize;
     }
@@ -25,5 +25,5 @@ public enum Sizes {
         return name() + "(" + EuroSize + ") " + getDescription();
     }
 
-    private int EuroSize;
+
 }

@@ -1,5 +1,7 @@
 package com.company.lesson10.Task3;
+
 import java.util.Locale;
+
 public class Enum {
 
     public static void main(String[] args) {
@@ -13,5 +15,5 @@ public class Enum {
     public static void printInfo(Seasons season) {
         System.out.printf(Locale.ROOT, "%s %s, ", season.name(), season);
         season.getDescription();
-        }
+    }
 }

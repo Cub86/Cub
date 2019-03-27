@@ -5,6 +5,10 @@ import java.util.Objects;
 public class Truba implements Instrument {
     private int diametr;
 
+    public Truba(int diametr) {
+        this.diametr = diametr;
+    }
+
     public int getDiametr() {
         return diametr;
     }
