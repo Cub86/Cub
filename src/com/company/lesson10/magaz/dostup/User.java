@@ -3,16 +3,19 @@ package com.company.lesson10.magaz.dostup;
 public class User {
     private String login;
     private String password;
+    private Bucket bucket;
 
     public User() {
         login = "";
         password = "";
+        bucket = new Bucket();
     }
 
-    public User(String login, String password) {
+    public User(String login, String password, Bucket bucket) {
         this.login = login;
         this.password = password;
-           }
+        this.bucket = bucket;
+    }
 
     public String getLogin() {
         return login;
@@ -30,6 +33,13 @@ public class User {
         this.password = password;
     }
 
+    public Bucket getBucket() {
+        return bucket;
+    }
+
+    public void setBucket(Bucket bucket) {
+        this.bucket = bucket;
+    }
 
     @Override
     public boolean equals(Object o) {
