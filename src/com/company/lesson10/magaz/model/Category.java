@@ -1,4 +1,4 @@
-package com.company.lesson10.magaz.dostup;
+package com.company.lesson10.magaz.model;
 
 import java.io.Serializable;
 

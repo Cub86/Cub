@@ -1,6 +1,8 @@
-package com.company.lesson10.magaz.dostup;
+package com.company.lesson10.magaz.model;
 
-public class Item {
+import java.io.Serializable;
+
+public class Item implements Comparable<Item>, Serializable {
     private String name;
     private double price;
     private int rank;
@@ -78,6 +80,11 @@ public class Item {
                 ", rank: " + rank +
                 ", category: " + category.getName() +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Item item) {
+        return name.compareTo(item.getName());
     }
 }
 
