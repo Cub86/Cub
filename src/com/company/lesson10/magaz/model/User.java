@@ -1,4 +1,4 @@
-package com.company.lesson10.magaz.dostup;
+package com.company.lesson10.magaz.model;
 
 public class User {
     private String login;
@@ -8,13 +8,12 @@ public class User {
     public User() {
         login = "";
         password = "";
-        bucket = new Bucket();
     }
 
-    public User(String login, String password, Bucket bucket) {
+    public User(String login, String password) {
         this.login = login;
         this.password = password;
-        this.bucket = bucket;
+        bucket = new Bucket();
     }
 
     public String getLogin() {
