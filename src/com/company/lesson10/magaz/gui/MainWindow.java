@@ -37,7 +37,7 @@ public class MainWindow extends JFrame implements MouseListener {
 
     public MainWindow() {
         session = new AppSession();
-        setTitle("LESSON 16(17) - MINI SHOP");
+        setTitle("LESSON 10");
         setPreferredSize(new Dimension(1000, 500));
         setResizable(false);
         pack();

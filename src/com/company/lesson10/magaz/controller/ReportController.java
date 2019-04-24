@@ -60,9 +60,9 @@ public class ReportController {
         String logFileName = user.getLogin() + '_' +
                 new SimpleDateFormat("ddMMyy_HHmm").format(currentTime) + ".txt";
         try (PrintWriter pw = new PrintWriter("src" + splitter +
-                "lesson16" + splitter + "task2" + splitter + "salechecks" + splitter + logFileName)) {
+                "lesson10" + splitter + "task5" + splitter + ";)" + splitter + logFileName)) {
             pw.printf("%S %2$td %2$tB %2$tY г.%n%n", "товарный чек от", currentTime);
-            pw.printf("%-15s %s%n", "поставщик:", "Petrykin's MINI-SHOP LTD");
+            pw.printf("%-15s %s%n", "поставщик:", "Хохлов и Ко");
             pw.printf("%-15s %s%n%n", "покупатель:", user.getLogin());
             pw.printf(getBucketContent(user));
         } catch (FileNotFoundException e) {
